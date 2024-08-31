@@ -1,6 +1,6 @@
 name: issue-workflow
 on:
-  issue:
+  issues:
     types: [opened]
 
 jobs:
@@ -13,4 +13,5 @@ jobs:
         run: |
           echo hello world
           echo github action
+    
  
