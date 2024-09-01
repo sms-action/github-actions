@@ -1,4 +1,4 @@
-name: dev_push
+name: CI-CD-PUSH-dev
 
 on:
   push:
