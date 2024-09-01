@@ -20,7 +20,7 @@ jobs:
 
       - name: Merge branch into develop
         run: |
-          git checkout develop
+          git checkout dev
           git merge ${{ github.ref }} --no-ff
 
       - name: Push changes to develop
