@@ -12,18 +12,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@4
+        uses: actions/checkout@3
 
   image-build:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
   deploy:
     runs-on: ubuntu-latest
     needs: [image-build]
     steps:
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
